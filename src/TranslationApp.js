@@ -20,6 +20,9 @@ class TranslationApp extends Component {
                     handleChange={this._updateText}
                 />
                 <OutputBox 
+                    theText={this.state.text.toUpperCase()}
+                />
+                <OutputBox 
                     theText={toLeet(this.state.text)}
                 />
             </div>
