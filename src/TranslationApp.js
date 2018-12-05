@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import InputBox from './InputBox';
 import OutputBox from './OutputBox';
 
+import toLeet from './leet';
+
 class TranslationApp extends Component {
     constructor(props){
         super(props);
@@ -18,7 +20,7 @@ class TranslationApp extends Component {
                     handleChange={this._updateText}
                 />
                 <OutputBox 
-                    theText={this.state.text.toUpperCase()}
+                    theText={toLeet(this.state.text)}
                 />
             </div>
         );
