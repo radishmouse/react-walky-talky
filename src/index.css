@@ -1,6 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
-  padding: 0;
+  padding: 50px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -12,3 +19,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.translation-app {
+  padding: 20px;
+  outline: 5px solid black;
+  width: 300px;
+}
+
+.input-box {
+  outline: 5px solid red;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.output-box {
+  outline: 5px solid green;
+  width: 80%;
+  margin: 20px auto;
+}
+
