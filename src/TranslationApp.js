@@ -21,6 +21,11 @@ class TranslationApp extends Component {
             <OutputBox 
                 theText={this.state.text}
             />
+
+            <OutputBox 
+                theText={this.state.text}                
+                doL33t={true}
+            />
           </div>            
         );
     }

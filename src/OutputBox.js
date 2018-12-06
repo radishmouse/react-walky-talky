@@ -19,9 +19,17 @@ function toL33t(originalText) {
 }
 
 const OutputBox = (props) => {
+
+    let textToDisplay = props.theText;
+    if (props.doL33t) {
+        textToDisplay = toL33t(props.theText);
+    } else {
+        textToDisplay = props.theText.toUpperCase();
+    }
+
     return (
         <div className='output-box'>
-            {toL33t(props.theText)}
+            {textToDisplay}
         </div>        
     );
 };
