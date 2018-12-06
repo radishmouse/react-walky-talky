@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import InputBox from './InputBox';
-import OuputBox from './OutputBox';
+import OutputBox from './OutputBox';
 
 class TranslationApp extends Component {
     constructor(props) {
@@ -10,7 +10,7 @@ class TranslationApp extends Component {
             text: ''
         };
     }
-    
+
     render() {
         return (
           <div className='translation-app'>
@@ -18,7 +18,7 @@ class TranslationApp extends Component {
                 theText={this.state.text}
                 changeHandler={this._updateText}
             />
-            <OuputBox 
+            <OutputBox 
                 theText={this.state.text}
             />
           </div>            

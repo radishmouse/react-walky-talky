@@ -3,7 +3,7 @@ import React from 'react';
 const OutputBox = (props) => {
     return (
         <div className='output-box'>
-            {props.theText}
+            {props.theText.toUpperCase()}
         </div>        
     );
 };
