@@ -3,6 +3,11 @@ import React, {Component} from 'react';
 import InputBox from './InputBox';
 import OutputBox from './OutputBox';
 
+import {
+    toL33t, 
+    toUpperCase
+} from './translations';
+
 class TranslationApp extends Component {
     constructor(props) {
         super(props);
@@ -23,8 +28,13 @@ class TranslationApp extends Component {
             />
 
             <OutputBox 
+                theText={this.state.text}
+                transformFunction={toUpperCase}
+            />
+
+            <OutputBox 
                 theText={this.state.text}                
-                doL33t={true}
+                transformFunction={toL33t}
             />
           </div>            
         );
