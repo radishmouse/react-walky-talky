@@ -33,8 +33,27 @@ code {
 }
 
 .output-box {
-  outline: 5px solid green;
   width: 80%;
   margin: 20px auto;
+}
+
+.outline-blue {
+  outline: 5px solid blue;  
+}
+
+.outline-green {
+  outline: 5px solid green;  
+}
+
+.outline-red {
+  outline: 5px solid red;  
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-yellow {
+  background-color: yellow;
 }
 

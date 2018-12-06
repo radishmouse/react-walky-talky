@@ -25,11 +25,16 @@ class TranslationApp extends Component {
             />
             <OutputBox 
                 theText={this.state.text}
+                bgClass='bg-green'
+                olClass='outline-red'
             />
 
             <OutputBox 
                 theText={this.state.text}
                 transformFunction={toUpperCase}
+                bgClass='bg-yellow'
+                olClass='outline-green'
+
             />
 
             <OutputBox 
